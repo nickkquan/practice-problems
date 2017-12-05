@@ -8,25 +8,29 @@
 
         <script>
 
-            // function do_math(num1, num2, operator) {
-            //     var result = [];
-            //     if(operator === '+') {
-            //         result.push(num1 + num2);
-            //     }
-            //
-            //     if(operator === '-') {
-            //         result.push(num1 + num2);
-            //     }
-            //
-            //     if (operator === 'x' || operator === 'X' || operator === '*') {
-            //         result.push(num1 * num2);
-            //     }
-            //
-            //     if (operator === '/') {
-            //         result.push (num1/num2)
-            //     }
-            //     console.log(result);
-            // }
+            //using if statement
+
+            function do_math(num1, num2, operator) {
+                var result = [];
+                if(operator === '+') {
+                    result.push(num1 + num2);
+                }
+
+                if(operator === '-') {
+                    result.push(num1 + num2);
+                }
+
+                if (operator === 'x' || operator === 'X' || operator === '*') {
+                    result.push(num1 * num2);
+                }
+
+                if (operator === '/') {
+                    result.push (num1/num2)
+                }
+                console.log(result);
+            }
+
+            //using switch method
 
             function do_math(num1, num2, operator){
                 var result = '';
