@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title> Do Math</title>
+
+        <script>
+
+            // function do_math(num1, num2, operator) {
+            //     var result = [];
+            //     if(operator === '+') {
+            //         result.push(num1 + num2);
+            //     }
+            //
+            //     if(operator === '-') {
+            //         result.push(num1 + num2);
+            //     }
+            //
+            //     if (operator === 'x' || operator === 'X' || operator === '*') {
+            //         result.push(num1 * num2);
+            //     }
+            //
+            //     if (operator === '/') {
+            //         result.push (num1/num2)
+            //     }
+            //     console.log(result);
+            // }
+
+            function do_math(num1, num2, operator){
+                var result = '';
+                switch (operator) {
+                    case "+":
+                        result = num1 + num2;
+                        break;
+                    case "-":
+                        result = num1 - num2;
+                        break;
+                    case "x":
+                        result = num1 * num2;
+                        break;
+                    case "X":
+                        result = num1 * num2;
+                        break;
+                    case "*":
+                        result = num1 * num2;
+                        break;
+                    case "/":
+                        result = num1 / num2;
+                        break;
+                }
+                console.log(result);
+            }
+
+        </script>
+
+    </head>
+
+    <body>
+
+    </body>
+
+</html>
