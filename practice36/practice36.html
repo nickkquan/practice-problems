@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>Find the vowels</title>
+
+        <script>
+
+            function findVowels(string) {
+                var vowels = ['a', 'e', 'i', 'o', 'u'];
+
+                var newString = '';
+
+                for (var i = 0; i < string.length; i++) {
+                    if (vowels.indexOf(string[i]) != -1) {
+                        newString += string[i]
+                    }
+                }
+                return newString;
+            }
+
+            findVowels('apple')
+
+        </script>
+
+    </head>
+
+    <body>
+
+    </body>
+
+</html>
