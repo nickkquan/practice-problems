@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Practice Problem 32 - Find Middle of String</title>
+
+    <script>
+
+        function find_middle_letters(string){
+
+            var result = '';
+
+            if (string.length % 2 == 0 ) {
+                var middleLetter = string.length/2;
+                result = string[middleLetter] + string[middleLetter+1];
+                return result;
+            }  else {
+                var middleLetter = string.length/2;
+                result =  string[middleLetter];
+                return result;
+            }
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

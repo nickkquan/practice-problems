@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <script>
+
+        var myArray = ['hello', 34, true, false, 'goodbye', 56, 12, '25', true]
+        console.log("Input results: ", myArray)
+        function groupArray(array) {
+            var outputArray = [];
+            var stringArray = [];
+            var numberArray = [];
+            var booleanArray = [];
+            for (var arrayIndex = 0; arrayIndex < array.length - 1; arrayIndex++) {
+                // debugger;
+                if (typeof (array[arrayIndex]) === "string") {
+                    stringArray.push(array[arrayIndex])
+                } else if (typeof array[arrayIndex] === "number") {
+                    numberArray.push(array[arrayIndex])
+                } else if (typeof (array[arrayIndex] === "boolean")) {
+                    booleanArray.push(array[arrayIndex])
+                }
+
+            }
+            outputArray.push(stringArray, numberArray, booleanArray)
+            console.log("Results: ", outputArray);
+            console.log("String array: ", outputArray[0])
+            console.log("Number array: ", outputArray[1])
+            console.log("Boolean array: ", outputArray[2])
+        }
+
+        groupArray(myArray)
+
+    </script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="practice-problem">
+        <h1 class="prompt">
+            Build a function that sorts an array into a multidimensional array grouped by data type
+        </h1>
+
+        <div class="instructions">
+            <h3>
+                Write a function that takes one parameter
+            </h3>
+            <h3>
+                The function should output a multidimensional array grouped by data type
+            </h3>
+            <p class="example input">
+                Example: - `var myArray = ['hello', 34, true, false, 'goodbye', 56, 12, '25', true];` `groupArray(myArray);`
+            </p>
+            <p class="example output">
+                Output - `[['hello, 'goodbye', '25'], [34, 56, 12], [true, false, true]]`
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

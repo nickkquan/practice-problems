@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>Practice 37 - Alternate Caps</title>
+
+        <script>
+
+            function alternateCaps(string){
+
+                var newString = '';
+
+                for (var i = 0; i < string.length; i++) {
+                    if(i % 2 === 0) {
+                        newString += string[i];
+                    } else {
+                        newString += string[i].toUpperCase();
+                    }
+                }
+                return newString;
+            }
+
+        </script>
+
+    </head>
+
+    <body>
+
+    </body>
+
+</html>
